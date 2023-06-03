@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Introduceti primul numar ");
+        let o = prompt("Introduceti operatia ");
+        let b = prompt("Introduceti al doilea numar ");
+        let rez = 0;
+        if (o == "+") {
+            rez = Number(a) + Number(b);
+            document.write(`Suma dintre ${a} si ${b} este:  `, rez);
+        } else if (o == "-") {
+            rez = Number(a) - Number(b);
+            document.write(`Diferenta dintre ${a} si ${b} este:  `, rez);
+        } else if (o == "*") {
+            rez = Number(a) * Number(b);
+            document.write(`Produsul dintre ${a} si ${b} este:  `, rez);
+        } else if (o == "/") {
+            rez = Number(a) / Number(b);
+            document.write(`Rezultatul impartirii dintre ${a} si ${b} este:  `, rez);
+        } else {
+            document.write(
+                "Nu ati introdus una dintre cele 4 operatii: '+', '*', '-' sauu '/'"
+            );
+        }
+    </script>
+</body>
+
+</html>

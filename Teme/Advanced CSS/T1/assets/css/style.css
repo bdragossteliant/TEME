@@ -1,0 +1,37 @@
+a[href^="https://www.google.com/"] {
+    color: green;
+}
+
+a[href^="https://www.link-group.eu/"] {
+    color: red;
+}
+
+
+#second-div p:nth-child(even) {
+    color: red;
+}
+
+#second-div p:nth-child(odd) {
+    color: blue;
+}
+
+#first-div p:nth-child(2)::after{
+    content: "-New";
+    color:yellow;
+}
+#first-div p:nth-child(3)::after{
+    content: "-New";
+    color:yellow;
+}
+
+#second-div p:nth-child(2)::after{
+    content: "-New";
+    color:white;
+}
+#second-di p:nth-child(odd)::after{
+    content: "-New";
+    color:white;
+}
+body p:last-of-type:hover{
+    font-style: italic;
+}
